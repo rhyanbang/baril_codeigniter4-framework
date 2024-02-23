@@ -1,0 +1,30 @@
+CRITICAL - 2024-02-22 09:37:56 --> Error: Call to undefined function get()
+in APPPATH\Config\Routes.php on line 9.
+ 1 SYSTEMPATH\Router\RouteCollection.php(344): require()
+ 2 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\baril_codeigniter4-framework\\public\\index.php')
+CRITICAL - 2024-02-22 09:42:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/add.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/add', [], true)
+ 3 APPPATH\Controllers\usercontroller.php(13): view('user/add')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\usercontroller->adduser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usercontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\baril_codeigniter4-framework\\public\\index.php')
+CRITICAL - 2024-02-22 09:43:26 --> Error: Undefined constant "this"
+in APPPATH\Views\layout\main.php on line 10.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/main', [], true)
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('users/add', [], true)
+ 5 APPPATH\Controllers\UserController.php(13): view('users/add')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->adduser()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\baril_codeigniter4-framework\\public\\index.php')
